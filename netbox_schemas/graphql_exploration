@@ -1,0 +1,47 @@
+# Query to get all available queries
+query AvailableQueries {
+  __schema {
+    queryType {
+      fields {
+        name
+        description
+        args {
+          name
+          description
+          type {
+            name
+            kind
+          }
+        }
+      }
+    }
+  }
+}
+
+# Example query to get all devices
+query AllDevices {
+  devices {
+    id
+    name
+    status {
+      value
+    }
+  }
+}
+
+# Example query to get a specific device by ID
+query GetDevice($id: ID!) {
+  device(id: $id) {
+    id
+    name
+    status {
+      value
+    }
+    deviceType {
+      model
+    }
+    site {
+      name
+    }
+  }
+}

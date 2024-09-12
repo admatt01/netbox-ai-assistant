@@ -1,0 +1,16 @@
+{
+  "name": "netbox_device_details",
+  "description": "Query Netbox for device information using a regex pattern for device name matching.",
+  "parameters": {
+    "type": "object",
+    "properties": {
+      "device_name_regex": {
+        "type": "string",
+        "description": "A regex pattern to match device names (e.g., 'cisco.*' to match all devices with names starting with 'cisco')."
+      }
+    },
+    "required": [
+      "device_name_regex"
+    ]
+  }
+}

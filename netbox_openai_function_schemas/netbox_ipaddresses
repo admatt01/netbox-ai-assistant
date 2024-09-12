@@ -1,0 +1,16 @@
+{
+  "name": "netbox_ipaddresses",
+  "description": "Query Netbox for IP address information using a regex pattern for IP address matching.",
+  "parameters": {
+    "type": "object",
+    "properties": {
+      "ipaddress_regex": {
+        "type": "string",
+        "description": "A regex pattern to match IP addresses (e.g., '^10.0.1.*' to match all IP addresses starting with 10.0.1"
+      }
+    },
+    "required": [
+      "ipaddress_regex"
+    ]
+  }
+}

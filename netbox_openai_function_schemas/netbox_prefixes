@@ -1,0 +1,16 @@
+{
+  "name": "netbox_prefixes",
+  "description": "Query Netbox for IP prefix information using a regex pattern for prefix matching.",
+  "parameters": {
+    "type": "object",
+    "properties": {
+      "prefix_regex": {
+        "type": "string",
+        "description": "A regex pattern to match IP prefixes (e.g., '^192.168.*' to match all prefixes starting with 192.168)."
+      }
+    },
+    "required": [
+      "prefix_regex"
+    ]
+  }
+}

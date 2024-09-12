@@ -1,0 +1,16 @@
+{
+  "name": "netbox_child_prefixes",
+  "description": "Query Netbox for child prefixes within a given parent prefix.",
+  "parameters": {
+    "type": "object",
+    "properties": {
+      "parent_prefix": {
+        "type": "string",
+        "description": "The parent prefix to search within (e.g., '192.168.0.0/22')."
+      }
+    },
+    "required": [
+      "parent_prefix"
+    ]
+  }
+}

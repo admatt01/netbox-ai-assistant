@@ -1,0 +1,16 @@
+{
+  "name": "netbox_sites",
+  "description": "Query Netbox for site information using a site name or partial name. The function uses regex matching to find sites.",
+  "parameters": {
+    "type": "object",
+    "properties": {
+      "site_name": {
+        "type": "string",
+        "description": "The name or partial name of the site(s) to query (e.g., 'Mel' for Melbourne). The function will use this as a regex pattern to match site names."
+      }
+    },
+    "required": [
+      "site_name"
+    ]
+  }
+}
