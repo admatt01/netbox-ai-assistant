@@ -217,7 +217,7 @@ if st.sidebar.button("Upload"):
 if not st.session_state.thread_id:
     thread = client.beta.threads.create()
     st.session_state.thread_id = thread.id
-    intro_message = "Hello! I'm your Netbox AI Assistant. You can ask me about IP addresses, devices, interfaces, locations and more. Start by asking my what I have in my toolbox."
+    intro_message = "Hello! I'm your Netbox AI Assistant. You can ask me about IP addresses, devices, interfaces, locations and more. Ask me about my Netbox tools."
     st.session_state.messages.append({"role": "assistant", "content": intro_message, "avatar": avatar_url})
 
 # Display chat history
