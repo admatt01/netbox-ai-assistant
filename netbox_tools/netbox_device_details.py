@@ -29,7 +29,7 @@ class NetboxGraphQLClient:
         query = """
         query Device($nameContains: String!) {
           device_list(filters: {
-            name: {contains: $nameContains}
+            name: {i_contains: $nameContains}
           }) {
             name
             primary_ip4 {
