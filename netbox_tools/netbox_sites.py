@@ -28,7 +28,7 @@ class NetboxGraphQLClient:
     def get_site_details(self, site_name: str) -> Dict[str, Any]:
         query = """
         query Sites($name: String!) {
-            site_list(filters: {name: {regex: $name}}) {
+            site_list(filters: {name: {i_regex: $name}}) {
                 status
                 comments
                 contacts {

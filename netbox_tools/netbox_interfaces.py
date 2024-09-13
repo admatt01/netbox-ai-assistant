@@ -28,7 +28,7 @@ class NetboxGraphQLClient:
     def get_interfaces(self, interface_regex):
         query = """
         query interface_list($interfaceRegex: String!) {
-            interface_list(filters: {name: {regex: $interfaceRegex}}) {
+            interface_list(filters: {name: {i_regex: $interfaceRegex}}) {
                 device {
                     name
                 }
