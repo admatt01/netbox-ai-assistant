@@ -30,7 +30,7 @@ class NetboxGraphQLClient:
         query IPaddresses($ipaddressRegex: String, $dnsNameRegex: String) {
             ip_address_list(filters: {
                 address: {regex: $ipaddressRegex}
-                dns_name: {regex: $dnsNameRegex}
+                dns_name: {i_regex: $dnsNameRegex}
             }) {
                 id
                 status
